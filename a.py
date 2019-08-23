@@ -1,15 +1,22 @@
-# -*- coding: utf-8 -*-
-from LineAPI.linepy import *
-from LineAPI.akad.ttypes import Message
-from LineAPI.akad.ttypes import ContentType as Type
-from gtts import gTTS
-from time import sleep
-from datetime import datetime, timedelta
-from bs4 import BeautifulSoup
-from googletrans import Translator
-from humanfriendly import format_timespan, format_size, format_number, format_length
-import time, random, sys, json, codecs, threading, glob, re, string, os, requests, six, ast, pytz, urllib, urllib3, urllib.parse, traceback, atexit, subprocess
+'''
+© 2019SelfBot ProtectV3.1
+'''
 
+from DHENZA import *
+from akad.ttypes import *
+from thrift.TMultiplexedProcessor import *
+from thrift.TSerialization import *
+from thrift.TRecursive import *
+from thrift import transport, protocol, server
+from important import *
+from random import randint
+from multiprocessing import Pool, Process
+from datetime import datetime
+from time import sleep
+from bs4 import BeautifulSoup
+from humanfriendly import format_timespan, format_size, format_number, format_length
+import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib.request, urllib.parse, urllib.error, urllib.parse
+Bot_startTime = time.strftime("%H:%M:%S", time.localtime())
 #zhoe = LINE()
 zhoe = LINE("")
 
